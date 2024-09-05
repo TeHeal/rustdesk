@@ -100,7 +100,7 @@ const CHARS: &[char] = &[
     'm', 'n', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
 ];
 
-pub const RENDEZVOUS_SERVERS: &[&str] = &["rust.teheal.cn:1106"];
+pub const RENDEZVOUS_SERVERS: &[&str] = &["rust.teheal.cn"];
 pub const PUBLIC_RS_PUB_KEY: &str = "lMVuZ5Srwdz+YRGR2gpX5AHR0WU9PBb3cxcrZVbM0fA=";
 
 pub const RS_PUB_KEY: &str = match option_env!("RS_PUB_KEY") {
@@ -108,8 +108,8 @@ pub const RS_PUB_KEY: &str = match option_env!("RS_PUB_KEY") {
     _ => PUBLIC_RS_PUB_KEY,
 };
 
-pub const RENDEZVOUS_PORT: i32 = 21116;
-pub const RELAY_PORT: i32 = 21117;
+pub const RENDEZVOUS_PORT: i32 = 1106;
+pub const RELAY_PORT: i32 = 1107;
 
 macro_rules! serde_field_string {
     ($default_func:ident, $de_func:ident, $default_expr:expr) => {
